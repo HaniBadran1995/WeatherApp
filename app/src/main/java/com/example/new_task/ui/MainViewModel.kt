@@ -20,7 +20,7 @@ class MainViewModel(application: Application): AndroidViewModel(application) {
                     val list= weatherData.value
                     list?.add(response?.body())
                     weatherData.postValue(list)
-                    //an3 ta3dek akod t3deel
+
                 }catch (e:Exception){
                     e.printStackTrace()
                 }

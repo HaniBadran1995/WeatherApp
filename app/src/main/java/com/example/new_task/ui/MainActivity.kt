@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
     private fun initViewModel(){
         viewModel.weatherData.observe(this,object :Observer<ArrayList<WeatherResult?>>{
             override fun onChanged(list: ArrayList<WeatherResult?>) {
-                // todo set adapter list and call notifyDatasetChanged
                 adapter.myList=list
 
                 adapter.notifyDataSetChanged()
